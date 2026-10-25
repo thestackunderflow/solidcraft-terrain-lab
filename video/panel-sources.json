@@ -1,0 +1,197 @@
+{
+ "lab": "solidcraft-terrain-lab",
+ "commit": "2e6297dfb88c9bc7e55d34658e2b1a965089379c",
+ "note": "every card pins solidcraft-terrain-lab@<commit>:<path>; sha256 of the committed blob",
+ "sources": [
+  {
+   "path": "claude-run/run.sh",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:claude-run/run.sh",
+   "sha256": "a9c8e72ab56c534be3fa49ab35804eee62bf4b90bcd2483fe53296172a91159b"
+  },
+  {
+   "path": "data/SOURCE.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:data/SOURCE.json",
+   "sha256": "434d555962215bfd765f64a04921681dba2b0b7e327318fe1a8c2180d0673821"
+  },
+  {
+   "path": "data/slices.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:data/slices.json",
+   "sha256": "86d65c9921253897ce4d0c131506b43def1b036b3ad55e415bdbfa467a8dfeea"
+  },
+  {
+   "path": "out/evidence/numbers.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/evidence/numbers.json",
+   "sha256": "d7ab9dda0978f5f6d89389458e42b5f5e4a0640527042b19c52ffa335e923a63"
+  },
+  {
+   "path": "out/probe/0.19.0/plane/transcript.jsonl",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/probe/0.19.0/plane/transcript.jsonl",
+   "sha256": "22a6229d4315a30fcee299055cde8d3989219f33822f7f001fe53744b82c1ea1"
+  },
+  {
+   "path": "out/probe/0.19.0/xz/transcript.jsonl",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/probe/0.19.0/xz/transcript.jsonl",
+   "sha256": "56a58fba2a251c25e0ecb59d1b456ebcb57271d05b0867695b12355a8f31ee83"
+  },
+  {
+   "path": "out/runs/SCORES.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/runs/SCORES.json",
+   "sha256": "79da5684e96ba11c0239e12348784e2c918db09ea594d42cefe2b76548140733"
+  },
+  {
+   "path": "out/runs/plain-1/transcript.jsonl",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/runs/plain-1/transcript.jsonl",
+   "sha256": "a97194b618f323d01344afefc81a95d242e78daff115ae43e587645630aec4a8"
+  },
+  {
+   "path": "out/slice/slice-report.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:out/slice/slice-report.json",
+   "sha256": "d46bb827f13f71a1b2cf852889eb53db12fcd885e2659686c8ff2f3163906138"
+  },
+  {
+   "path": "steps/terrain-plane.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:steps/terrain-plane.json",
+   "sha256": "2656c66732c25d3eee0aed95397db268b41b39f1f455ff9d8ab2af5c9ab6d3b7"
+  },
+  {
+   "path": "steps/terrain-xz.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:steps/terrain-xz.json",
+   "sha256": "a608622ede7831e51ff79abb438553d628f59acde14a01718a5b89adfac92cda"
+  },
+  {
+   "path": "terrain/sections.py",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:terrain/sections.py",
+   "sha256": "f67eee0b29495b3acba3c0eee06e8edeb91faf306edf5cd659f8ec8f0a9c265b"
+  },
+  {
+   "path": "video/frames/data-relief-mirrored.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/data-relief-mirrored.png",
+   "sha256": "6d33e9ca9ce465d6f3ff7cb7523713ddb9a9438401ddfc877da3a40c60f7c82c"
+  },
+  {
+   "path": "video/frames/data-relief.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/data-relief.png",
+   "sha256": "c2dbe355caedc5c8d7287295437f99bd9ec6a940209fc054f017f6f27365ca0a"
+  },
+  {
+   "path": "video/frames/data-slices.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/data-slices.png",
+   "sha256": "317ff1e6a7936b53b868d3aa63038a2410d65836f7aa0a141c34cd8a501c8ecf"
+  },
+  {
+   "path": "video/frames/hook-landscape.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/hook-landscape.png",
+   "sha256": "fffad000667880cd2f16cbdf809c46d8568c618d8c1fc2be7ab3e70e85e4f83f"
+  },
+  {
+   "path": "video/frames/hook-vertical.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/hook-vertical.png",
+   "sha256": "eea8c9adc4f52d927ea8b7a2f375256582ece0d26b5167805bdbc582341de398"
+  },
+  {
+   "path": "video/frames/iso-1x.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/iso-1x.png",
+   "sha256": "76cb5f9b334b9a03e50fd5b9275e94b56d4d4d081d0c5016fd101f59ce4ae4bd"
+  },
+  {
+   "path": "video/frames/iso-2x.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/iso-2x.png",
+   "sha256": "736a98cbc4c307b1b7014cf72c95c8a4eb2fbd0ec476c1027d35c13cc5f9e2e6"
+  },
+  {
+   "path": "video/frames/iso-plates.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/iso-plates.png",
+   "sha256": "fa728bd2e7f5fb35901f11fd09a48a6014f5ea2c6b90a0f54254b8d02cd75ddc"
+  },
+  {
+   "path": "video/frames/iso-upright.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/iso-upright.png",
+   "sha256": "f231ce8b8a94f8b0ceeb836461491a8e1b0a1cfa519da0ddd15fbcfe2d1aa447"
+  },
+  {
+   "path": "video/frames/side-under-floor.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/side-under-floor.png",
+   "sha256": "29e30a0a6fa5f7a1548cd84dd626064ea991156c88e986a2d353d2992e3081e5"
+  },
+  {
+   "path": "video/frames/side-upright.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/side-upright.png",
+   "sha256": "837c8d2a325a8e65c0469ed064ab30cfe2c56fd65d4a01619867daf0fe84199d"
+  },
+  {
+   "path": "video/frames/stretch.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/stretch.png",
+   "sha256": "48211fb97b6f50d0b3bbbefd7ca1a53b6ef672146d3bdaf1b05883df9041d68b"
+  },
+  {
+   "path": "video/frames/tilt-right.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/tilt-right.png",
+   "sha256": "eba79b5446dfe68622b259cfd0ded06d9b028df6bf8ff486fa56ba442c8d40b7"
+  },
+  {
+   "path": "video/frames/tilt-slicer-flip.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/tilt-slicer-flip.png",
+   "sha256": "d0ad0c205c959ce7364ae60f580914fc3e02b5d377d4cd79525d3851d4dda4fa"
+  },
+  {
+   "path": "video/frames/top-right.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/top-right.png",
+   "sha256": "2eec74fe270a7be4698cc74b8aaa0e93eabd8a2cd09c24bfa2a3b177b6f19c83"
+  },
+  {
+   "path": "video/frames/top-slicer-flip.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/top-slicer-flip.png",
+   "sha256": "6779f360611a414892261c3cc18826de1282c551d1f7248b2af7532e5f1b6c4c"
+  },
+  {
+   "path": "video/frames/twist.png",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/frames/twist.png",
+   "sha256": "bec4099985c8921e3682f8fa9fa79baa4c368da4e98202f9e774419682a152ca"
+  },
+  {
+   "path": "video/json-cards.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/json-cards.json",
+   "sha256": "6a96538df16ef4ce725c77fd990d6c803fadcfbd1cb66d1d81e6cdeb2ab8295e"
+  },
+  {
+   "path": "video/python-cards.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/python-cards.json",
+   "sha256": "b73b3c7f69ee7b2dd7f2c6d2156f693c2cdb9e67845530438936d485b262c648"
+  },
+  {
+   "path": "video/terminal-data.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-data.txt",
+   "sha256": "638f4dd07d3bb1b1f6205e0b419388c80ce5388cb84a2bfc80ec368ee2fdef6c"
+  },
+  {
+   "path": "video/terminal-proof.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-proof.txt",
+   "sha256": "a5bb15a1d3a846f229a1911c8866faf2690048506dc7c277e2576ba44846315c"
+  },
+  {
+   "path": "video/terminal-runs.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-runs.txt",
+   "sha256": "5c79c57c5122e6f268fe3b36857eb1ebbdd091b15500440df5804eb95e0a318d"
+  },
+  {
+   "path": "video/terminal-slicer.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-slicer.txt",
+   "sha256": "9e8e0d025da51d85884b3df4c67de71a2daa24caec7e2b38ecf61882e484fb5f"
+  },
+  {
+   "path": "video/terminal-summit.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-summit.txt",
+   "sha256": "0dfdedbaf75ff23c885d2cc43bf0a494e753c1e487c2b6037ddf7bb9d52354b3"
+  },
+  {
+   "path": "video/terminal-upside.txt",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/terminal-upside.txt",
+   "sha256": "f97dd0f9e1d20d61e5cf8ccedc96dd1c4e8e5b986ca0dc7c79cbdce90096067e"
+  },
+  {
+   "path": "video/toolcalls.json",
+   "pin": "solidcraft-terrain-lab@2e6297dfb88c9bc7e55d34658e2b1a965089379c:video/toolcalls.json",
+   "sha256": "0916c3581e979d159499ce74152e6e26194976864f9303be89066174aea97a7f"
+  }
+ ]
+}

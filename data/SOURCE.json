@@ -1,0 +1,19 @@
+{
+ "source": "USGS 3DEP, ImageServer exportImage",
+ "bbox_wsen_deg": [
+  -122.24,
+  46.16,
+  -122.14,
+  46.24
+ ],
+ "fetched_utc": "2026-10-22T18:19:12+00:00",
+ "credit": "Map services and data available from U.S. Geological Survey, National Geospatial Program.",
+ "files": [
+  {
+   "file": "data/picture-grid.tif",
+   "url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=-122.24%2C46.16%2C-122.14%2C46.24&bboxSR=4326&imageSR=4326&size=400%2C320&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&f=image",
+   "bytes": 787334,
+   "sha256": "f6ff705a85727fc1dfe928240f37d1282fc967605e9b0712d11e4e59b869a200"
+  }
+ ]
+}

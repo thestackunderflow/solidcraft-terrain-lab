@@ -1,0 +1,4 @@
+50 slices on XZ, lofted: ok, true
+lowest point  z = -33.2 mm
+highest point z = 0.0 mm
+= the mountain hangs under the floor

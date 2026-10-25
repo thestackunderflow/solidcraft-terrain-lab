@@ -1,0 +1,23 @@
+...FF......                                                              [100%]
+=================================== FAILURES ===================================
+__________ test_sample_grid_is_exact_on_a_plane_and_keeps_the_corners __________
+
+    def test_sample_grid_is_exact_on_a_plane_and_keeps_the_corners():
+        # z = 2 * col + 3 * row on a 320 x 400 grid: bilinear sampling reproduces a plane exactly
+        rr, cc = np.mgrid[0:320, 0:400]
+        z = 2.0 * cc + 3.0 * rr
+>       s = S.sample_grid(z, rows=50, cols=44)
+E       AttributeError: module 'terrain.sections' has no attribute 'sample_grid'
+
+tests/test_sections.py:92: AttributeError
+__________________ test_pixel_scale_reads_the_geotiff_extent ___________________
+
+    def test_pixel_scale_reads_the_geotiff_extent():
+>       assert S.pixel_scale(os.path.join(LAB, 'data', 'picture-grid.tif'))[:2] == pytest.approx((0.00025, 0.00025))
+E       AttributeError: module 'terrain.sections' has no attribute 'pixel_scale'
+
+tests/test_sections.py:101: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_sections.py::test_sample_grid_is_exact_on_a_plane_and_keeps_the_corners
+FAILED tests/test_sections.py::test_pixel_scale_reads_the_geotiff_extent - At...
+2 failed, 9 passed in 0.14s

@@ -1,0 +1,93 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_________________ test_xz_loft_is_ok_and_hangs_under_the_floor _________________
+
+    def test_xz_loft_is_ok_and_hangs_under_the_floor():
+>       s = cell('xz')
+
+tests/test_cells.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'xz'
+
+    def cell(name):
+>       with open(os.path.join(OUT, name, 'summary.json'), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../out/probe/0.19.0/xz/summary.json'
+
+tests/test_cells.py:18: FileNotFoundError
+_________________ test_right_way_up_and_right_way_round[flip] __________________
+
+c = 'flip'
+
+    @pytest.mark.parametrize('c', ['flip', 'plane', 'mirror'])
+    def test_right_way_up_and_right_way_round(c):
+>       s, m = cell(c), meta()
+
+tests/test_cells.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'flip'
+
+    def cell(name):
+>       with open(os.path.join(OUT, name, 'summary.json'), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../out/probe/0.19.0/flip/summary.json'
+
+tests/test_cells.py:18: FileNotFoundError
+_________________ test_right_way_up_and_right_way_round[plane] _________________
+
+c = 'plane'
+
+    @pytest.mark.parametrize('c', ['flip', 'plane', 'mirror'])
+    def test_right_way_up_and_right_way_round(c):
+>       s, m = cell(c), meta()
+
+tests/test_cells.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'plane'
+
+    def cell(name):
+>       with open(os.path.join(OUT, name, 'summary.json'), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../out/probe/0.19.0/plane/summary.json'
+
+tests/test_cells.py:18: FileNotFoundError
+________________ test_right_way_up_and_right_way_round[mirror] _________________
+
+c = 'mirror'
+
+    @pytest.mark.parametrize('c', ['flip', 'plane', 'mirror'])
+    def test_right_way_up_and_right_way_round(c):
+>       s, m = cell(c), meta()
+
+tests/test_cells.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'mirror'
+
+    def cell(name):
+>       with open(os.path.join(OUT, name, 'summary.json'), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../out/probe/0.19.0/mirror/summary.json'
+
+tests/test_cells.py:18: FileNotFoundError
+_____________________ test_slicer_flip_is_up_but_mirrored ______________________
+
+    def test_slicer_flip_is_up_but_mirrored():
+>       s, m = cell('slicer-flip'), meta()
+
+tests/test_cells.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'slicer-flip'
+
+    def cell(name):
+>       with open(os.path.join(OUT, name, 'summary.json'), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../out/probe/0.19.0/slicer-flip/summary.json'
+
+tests/test_cells.py:18: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_cells.py::test_xz_loft_is_ok_and_hangs_under_the_floor - Fi...
+FAILED tests/test_cells.py::test_right_way_up_and_right_way_round[flip] - Fil...
+FAILED tests/test_cells.py::test_right_way_up_and_right_way_round[plane] - Fi...
+FAILED tests/test_cells.py::test_right_way_up_and_right_way_round[mirror] - F...
+FAILED tests/test_cells.py::test_slicer_flip_is_up_but_mirrored - FileNotFoun...
+5 failed in 0.07s

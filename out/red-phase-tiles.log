@@ -1,0 +1,84 @@
+.FF......                                                                [100%]
+=================================== FAILURES ===================================
+_____________________ test_read_tiled_tiff_exact[shape0-4] _____________________
+
+shape = (5, 7), tile = 4
+
+    @pytest.mark.parametrize('shape,tile', [((5, 7), 4), ((3, 3), 128)])
+    def test_read_tiled_tiff_exact(shape, tile):
+        a = np.arange(shape[0] * shape[1], dtype='<f4').reshape(shape) * 1.5 + 900
+        p = os.path.join(tempfile.mkdtemp(), 't.tif')
+        write_tiled_tiff(p, a, tile)
+>       assert np.array_equal(S.read_tiff(p), a)
+
+tests/test_sections.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = '/tmp/tmpdv1qr5l8/t.tif'
+
+    def read_tiff(path):
+        """An uncompressed float32 GeoTIFF (what the 3DEP exportImage returns) as a rows x cols array."""
+        b = open(path, 'rb').read()
+        end = '<' if b[:2] == b'II' else '>'
+        ifd = struct.unpack(end + 'I', b[4:8])[0]
+        n = struct.unpack(end + 'H', b[ifd:ifd + 2])[0]
+        tags = {}
+        for i in range(n):
+            e = b[ifd + 2 + 12 * i: ifd + 14 + 12 * i]
+            tag, typ, cnt = struct.unpack(end + 'HHI', e[:8])
+            size = {3: 2, 4: 4}.get(typ, 4)
+            if cnt * size <= 4:
+                vals = struct.unpack(end + ('H' if typ == 3 else 'I') * cnt, e[8:8 + cnt * size])
+            else:
+                off = struct.unpack(end + 'I', e[8:12])[0]
+                vals = struct.unpack(end + ('H' if typ == 3 else 'I') * cnt, b[off:off + cnt * size])
+            tags[tag] = vals
+        w, h = tags[256][0], tags[257][0]
+        assert tags[259][0] == 1 and tags[258][0] == 32 and tags.get(339, (3,))[0] == 3, 'uncompressed float32 only'
+>       data = b''.join(b[o:o + c] for o, c in zip(tags[273], tags[279]))
+E       KeyError: 273
+
+terrain/sections.py:30: KeyError
+____________________ test_read_tiled_tiff_exact[shape1-128] ____________________
+
+shape = (3, 3), tile = 128
+
+    @pytest.mark.parametrize('shape,tile', [((5, 7), 4), ((3, 3), 128)])
+    def test_read_tiled_tiff_exact(shape, tile):
+        a = np.arange(shape[0] * shape[1], dtype='<f4').reshape(shape) * 1.5 + 900
+        p = os.path.join(tempfile.mkdtemp(), 't.tif')
+        write_tiled_tiff(p, a, tile)
+>       assert np.array_equal(S.read_tiff(p), a)
+
+tests/test_sections.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = '/tmp/tmp98qjwgvf/t.tif'
+
+    def read_tiff(path):
+        """An uncompressed float32 GeoTIFF (what the 3DEP exportImage returns) as a rows x cols array."""
+        b = open(path, 'rb').read()
+        end = '<' if b[:2] == b'II' else '>'
+        ifd = struct.unpack(end + 'I', b[4:8])[0]
+        n = struct.unpack(end + 'H', b[ifd:ifd + 2])[0]
+        tags = {}
+        for i in range(n):
+            e = b[ifd + 2 + 12 * i: ifd + 14 + 12 * i]
+            tag, typ, cnt = struct.unpack(end + 'HHI', e[:8])
+            size = {3: 2, 4: 4}.get(typ, 4)
+            if cnt * size <= 4:
+                vals = struct.unpack(end + ('H' if typ == 3 else 'I') * cnt, e[8:8 + cnt * size])
+            else:
+                off = struct.unpack(end + 'I', e[8:12])[0]
+                vals = struct.unpack(end + ('H' if typ == 3 else 'I') * cnt, b[off:off + cnt * size])
+            tags[tag] = vals
+        w, h = tags[256][0], tags[257][0]
+        assert tags[259][0] == 1 and tags[258][0] == 32 and tags.get(339, (3,))[0] == 3, 'uncompressed float32 only'
+>       data = b''.join(b[o:o + c] for o, c in zip(tags[273], tags[279]))
+E       KeyError: 273
+
+terrain/sections.py:30: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_sections.py::test_read_tiled_tiff_exact[shape0-4] - KeyErro...
+FAILED tests/test_sections.py::test_read_tiled_tiff_exact[shape1-128] - KeyEr...
+2 failed, 7 passed in 0.15s

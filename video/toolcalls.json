@@ -1,0 +1,30 @@
+[
+ {
+  "id": "tc-loft",
+  "evidence": "out/probe/0.19.0/xz/transcript.jsonl#seq=8",
+  "tool": "batch",
+  "result": "\"ok\": true",
+  "plain": "50 slices and the loft: built, no warning"
+ },
+ {
+  "id": "tc-under",
+  "evidence": "out/probe/0.19.0/xz/transcript.jsonl#seq=10",
+  "tool": "measure",
+  "result": "-33.1653521301947",
+  "plain": "the lowest point: 33 mm under the floor"
+ },
+ {
+  "id": "tc-up",
+  "evidence": "out/probe/0.19.0/plane/transcript.jsonl#seq=10",
+  "tool": "measure",
+  "result": "33.1653521301947",
+  "plain": "the top: 33 mm above the floor"
+ },
+ {
+  "id": "tc-claude-mirror",
+  "evidence": "out/runs/plain-1/transcript.jsonl#seq=34",
+  "tool": "execute",
+  "result": "\"created_bodies\": [ \"Body1 (2)\" ]",
+  "plain": "Claude's fix: a mirror across the floor plane"
+ }
+]

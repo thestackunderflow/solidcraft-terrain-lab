@@ -1,0 +1,15 @@
+[
+ {
+  "id": "json-plane",
+  "src": "out/probe/0.19.0/xz/transcript.jsonl#L8",
+  "source_kind": "no-AI test (our probe)",
+  "view": {
+   "reformat": "pretty",
+   "at": "/msg/params/arguments/commands/0/params",
+   "cols": 44
+  },
+  "focusKey": "/msg/params/arguments/commands/0/params/plane",
+  "focusValue": "XZ",
+  "spoken": "plane, X Z"
+ }
+]

@@ -1,0 +1,4 @@
+USGS 3DEP heights · 400 x 320 samples
+50 slices x 44 points, 2.3 mm apart
+tile 100 x 115 mm · 1 : 77,049
+heights x 1.5 · base 3 mm

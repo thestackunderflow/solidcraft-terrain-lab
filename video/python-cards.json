@@ -1,0 +1,18 @@
+[
+ {
+  "id": "py-row",
+  "src": "terrain/sections.py#L68-73",
+  "focus": [
+   71
+  ],
+  "note": "one row in: each height becomes one dot"
+ },
+ {
+  "id": "py-close",
+  "src": "terrain/sections.py#L68-73",
+  "focus": [
+   73
+  ],
+  "note": "down to the base and back: one slice"
+ }
+]

@@ -1,0 +1,15 @@
+[terrain.stl]
+size_x = 100.000000
+size_y = 114.808502
+size_z = 33.159283
+min_x = -0.000000
+min_y = -0.000000
+min_z = -0.000000
+max_x = 100.000000
+max_y = 114.808502
+max_z = 33.159283
+number_of_facets = 90806
+manifold = yes
+facets_reversed = 11
+number_of_parts =  1
+volume = 166211.265625

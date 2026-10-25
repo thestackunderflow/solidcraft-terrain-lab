@@ -1,0 +1,3 @@
+our 50 slices: top 2,505 m
+the 400 x 320 grid: 2,525 m
+USGS (2009 lidar): 2,539 m

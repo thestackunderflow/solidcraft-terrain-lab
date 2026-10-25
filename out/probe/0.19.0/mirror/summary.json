@@ -1,0 +1,52 @@
+{
+ "cell": "mirror",
+ "version": "0.19.0",
+ "utc": "2026-10-22T18:20:54+00:00",
+ "ok": true,
+ "failed": null,
+ "loft_warning": null,
+ "loft_ms": 125.68057999999999,
+ "extra": [
+  {
+   "bodies": [
+    "Mountain",
+    "Mountain (2)"
+   ],
+   "changed_bodies": [],
+   "created_bodies": [
+    "Mountain (2)"
+   ],
+   "feature": 52,
+   "ms": 1.620987,
+   "name": "Mirror1",
+   "removed_bodies": [],
+   "warning": null
+  }
+ ],
+ "bodies": [
+  "Mountain (2)"
+ ],
+ "volume_mm3": 166209.294,
+ "bbox_min": [
+  -0.0,
+  -0.0,
+  -0.0
+ ],
+ "bbox_max": [
+  100.0,
+  114.8085,
+  33.1654
+ ],
+ "summit": [
+  44.186,
+  44.6692,
+  33.1593
+ ],
+ "stl": {
+  "watertight": true,
+  "bodies": 1,
+  "triangles": 90806
+ },
+ "hand_volume_mm3": 166190.641,
+ "volume_vs_hand_pct": 0.0112
+}

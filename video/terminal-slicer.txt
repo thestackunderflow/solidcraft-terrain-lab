@@ -1,0 +1,4 @@
+PrusaSlicer 2.9.2 · MK4S 0.4 · PLA
+0.2 mm layers · slicer estimate
+2h 47m 24s · 77 g
+one part, no open edges

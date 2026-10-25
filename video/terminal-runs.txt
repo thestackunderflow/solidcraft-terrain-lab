@@ -1,0 +1,5 @@
+3 runs · Claude Code · same prompt
+right way up: 3 of 3
+right way round: 3 of 3
+fixed with a mirror: 3 of 3
+agent cost: $1.22 at API prices
